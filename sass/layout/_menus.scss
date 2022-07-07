@@ -1,0 +1,64 @@
+/* Style Pages Menu */
+.fa-arrow-left{
+    position: relative;
+    bottom: 28px;
+    left: 40px;
+}
+
+.photomenu{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu{
+    background-color: $color-background;
+    position: relative;
+    top: -50px;
+    padding: 30px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-bottom: -50px;
+}
+.nomrestaurant{
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.plat{
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    border-bottom: 4px solid $color-tertiary;
+    width: 40px;
+}
+
+.choix{
+    width: auto;
+    margin: 20px 0;
+    padding: 5px 25px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.choix:hover{
+    box-shadow: 5px 5px 5px $color-shadow;
+}
+
+.menu .bouton{
+    margin-top: 55px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    padding: 25px;
+    width: 60%;
+    text-align: center;
+    border-radius: 60px;
+    color: white;
+    font-size: 17px;
+}
+
+ .bouton:hover{
+    box-shadow: 5px 5px 5px $color-shadow;   
+}

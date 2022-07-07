@@ -1,4 +1,243 @@
+@charset "UTF-8";
 body {
   background-color: white;
+}
+
+/* Logo - En-tête */
+.logo {
+  width: 70%;
+  padding: 25px 0px 15px 130px;
+}
+
+/* Barre de localisation*/
+.location {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: relative;
+  background-color: #e6e6e6;
+}
+
+.fa-location-dot {
+  width: 40px;
+  height: 41px;
+  padding-top: 17px;
+  padding-left: 150px;
+}
+
+.paris {
+  position: absolute;
+  left: 170px;
+  width: 230px;
+  padding: 17px;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.restaurants {
+  background-color: #F2F2F2;
+  padding: 25px 20px;
+}
+
+h3 {
+  margin: 6px 10px;
+}
+
+.lieu {
+  padding-left: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+  width: 100%;
+  height: 265px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #bbbbbb;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px #555;
+}
+
+.photo {
+  width: 100%;
+  height: 190px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Pied de page */
+footer {
+  background-color: #2f2f2f;
+}
+
+.textfooter {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-family: "Shrikhand";
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer li {
+  padding-bottom: 10px;
+}
+
+.fa-solid {
+  width: 25px;
+}
+
+/* Style Pages Menu */
+.fa-arrow-left {
+  position: relative;
+  bottom: 28px;
+  left: 40px;
+}
+
+.photomenu {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  background-color: #F2F2F2;
+  position: relative;
+  top: -50px;
+  padding: 30px 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-bottom: -50px;
+}
+
+.nomrestaurant {
+  font-family: "Shrikhand";
+  font-size: 30px;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.plat {
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+}
+
+.choix {
+  width: auto;
+  margin: 20px 0;
+  padding: 5px 25px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.choix:hover {
+  box-shadow: 5px 5px 5px #bbbbbb;
+}
+
+.menu .bouton {
+  margin-top: 55px;
+  margin-bottom: 50px;
+  margin-left: 20%;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 25px;
+  width: 60%;
+  text-align: center;
+  border-radius: 60px;
+  color: white;
+  font-size: 17px;
+}
+
+.bouton:hover {
+  box-shadow: 5px 5px 5px #bbbbbb;
+}
+
+/* Titre de la page */
+.titrePrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+  text-align: center;
   padding: 20px;
+}
+
+.titrePrincipal .bouton {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 25px;
+  width: 240px;
+  text-align: center;
+  border-radius: 60px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+/* Mode d'emploi du site */
+.fonctionnement {
+  padding: 25px 20px;
+}
+
+.listeboutons {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionnement .bouton {
+  width: auto;
+  margin-left: 10px;
+  padding: 25px 0;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #bbbbbb;
+}
+
+.fonctionnement .fa-solid {
+  padding: 0 40px;
+}
+
+.fonctionnement .numero {
+  position: relative;
+  left: 0px;
+  bottom: 47px;
+  color: white;
+  padding-left: 7px;
+  padding-top: 4px;
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
