@@ -39,6 +39,68 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.titrePrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 20px;
+}
+
+.titrePrincipal .bouton {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 25px;
+  width: 240px;
+  text-align: center;
+  border-radius: 60px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+.fonctionnement {
+  padding: 25px 20px;
+}
+
+.listeboutons {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionnement .bouton {
+  width: auto;
+  margin-left: 10px;
+  padding: 25px 0;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #bbbbbb;
+}
+
+.fonctionnement .fa-solid {
+  padding: 0 40px;
+}
+
+.fonctionnement .numero {
+  position: relative;
+  left: 0px;
+  bottom: 47px;
+  color: white;
+  padding-left: 7px;
+  padding-top: 4px;
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .restaurants {
   background-color: #F2F2F2;
   padding: 25px 20px;
@@ -176,68 +238,4 @@ footer li {
 
 .bouton:hover {
   box-shadow: 5px 5px 5px #bbbbbb;
-}
-
-/* Titre de la page */
-.titrePrincipal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #F2F2F2;
-  text-align: center;
-  padding: 20px;
-}
-
-.titrePrincipal .bouton {
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  padding: 25px;
-  width: 240px;
-  text-align: center;
-  border-radius: 60px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  color: white;
-  font-size: 17px;
-}
-
-h1 {
-  font-size: 26px;
-}
-
-/* Mode d'emploi du site */
-.fonctionnement {
-  padding: 25px 20px;
-}
-
-.listeboutons {
-  display: flex;
-  flex-direction: column;
-}
-
-.fonctionnement .bouton {
-  width: auto;
-  margin-left: 10px;
-  padding: 25px 0;
-  background-color: #F2F2F2;
-  border-radius: 25px;
-  box-shadow: 5px 5px 5px #bbbbbb;
-}
-
-.fonctionnement .fa-solid {
-  padding: 0 40px;
-}
-
-.fonctionnement .numero {
-  position: relative;
-  left: 0px;
-  bottom: 47px;
-  color: white;
-  padding-left: 7px;
-  padding-top: 4px;
-  background-color: #9356DC;
-  width: 25px;
-  height: 25px;
-  border-radius: 15px;
-  margin-top: 0;
-  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
