@@ -1,8 +1,13 @@
 /* Style Pages Menu */
 .fa-arrow-left{
     position: relative;
-    bottom: 28px;
+    bottom: 20px;
     left: 40px;
+}
+
+.logo{
+    width: 300px;
+    padding: 15px 0 10px 100px;
 }
 
 .photomenu{
@@ -59,6 +64,6 @@
     font-size: 17px;
 }
 
- .bouton:hover{
+.bouton:hover{
     box-shadow: 5px 5px 5px $color-shadow;   
 }
