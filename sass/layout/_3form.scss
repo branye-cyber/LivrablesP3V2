@@ -74,3 +74,38 @@ a{
     border-top-right-radius: 20px;
     object-fit: cover;
 }
+
+@media screen and (min-width: 1000px) {
+    .listeboutons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fonctionnement .bouton{
+        width: 400px;
+        margin-left: 10px;
+        padding: 25px 0;
+        background-color: $color-background;
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px $color-shadow;
+    }
+    
+    .fonctionnement .fa-solid{
+        padding: 0 40px;
+    }
+    
+    .fonctionnement .numero{
+        position: relative;
+        left: 0px;
+        bottom: 47px;
+        color: white;
+        padding-left: 7px;
+        padding-top: 4px;
+        background-color: $color-primary;
+        width: 25px;
+        height: 25px;
+        border-radius: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

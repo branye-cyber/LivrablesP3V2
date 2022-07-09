@@ -37,6 +37,7 @@ h1{
     background-color: $color-background;
     text-align: center;
     .bouton{
+        cursor: pointer;
         background: linear-gradient(to bottom right, $color-secondary, $color-primary);
         padding: 25px;
         width: 240px;
