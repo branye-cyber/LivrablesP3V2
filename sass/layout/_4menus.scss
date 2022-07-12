@@ -1,13 +1,19 @@
 /* Style Pages Menu */
-.fa-arrow-left{
+.titre{
     position: relative;
-    bottom: 20px;
+    @extend %flex-center;
+}
+
+.fa-arrow-left{
+    position: absolute;
+    bottom: 15px;
     left: 40px;
 }
 
 .logo{
-    width: 300px;
-    padding: 15px 0 10px 100px;
+    width: 160px;
+    margin: auto;
+    padding: 10px 0;
 }
 
 .photomenu{
@@ -36,7 +42,7 @@
 
 .nomrestaurant{
     font-family: 'Shrikhand';
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     padding-bottom: 30px;
 }
@@ -45,6 +51,7 @@
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 7px;
+    font-weight:300;
     border-bottom: 4px solid $color-tertiary;
     width: 40px;
 }
@@ -56,7 +63,7 @@
     background-color: white;
     border-radius: 25px;
     h2{
-        font-size: 20px;
+        font-size: 19px;
         margin: 8px 0 0 0;
     }
     .details{
@@ -64,10 +71,10 @@
         justify-content: space-between;
         p{
             margin: 8px 0 8px 0;
+            font-weight: 300;
         }
-        h3{
-            margin: 0 0;
-            padding: 6px 0;
+        span{
+            font-weight:bolder;
         }
     }
 }
