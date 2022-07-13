@@ -254,7 +254,8 @@ a {
   font-weight: 300;
 }
 .choix .details span {
-  font-weight: bolder;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .choix:hover {
