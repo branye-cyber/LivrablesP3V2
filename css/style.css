@@ -94,7 +94,7 @@ h1 {
 .fonctionnement .numero {
   position: relative;
   right: 10px;
-  top: 20px;
+  top: 22px;
   color: white;
   padding-left: 7px;
   padding-top: 4px;
@@ -167,16 +167,11 @@ a {
   }
   .fonctionnement .numero {
     position: relative;
-    bottom: 200px;
     color: white;
-    padding-left: 7px;
-    padding-top: 4px;
     background-color: #9356DC;
     width: 25px;
     height: 25px;
     border-radius: 15px;
-    margin-top: 0;
-    margin-bottom: 0;
   }
   .cards1, .cards2 {
     display: flex;
