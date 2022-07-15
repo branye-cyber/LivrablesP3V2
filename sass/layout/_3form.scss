@@ -10,8 +10,10 @@
 
 .fonctionnement .bouton{
     width: auto;
+    height: 70px;
     margin-left: 10px;
-    padding: 25px 0;
+    margin-bottom: 30px;
+    padding: 0 0 20px 0;
     background-color: $color-background;
     border-radius: 25px;
     box-shadow: 5px 5px 5px $color-shadow;
@@ -23,8 +25,8 @@
 
 .fonctionnement .numero{
     position: relative;
-    left: 0px;
-    bottom: 47px;
+    right: 10px;
+    top: 20px;
     color: white;
     padding-left: 7px;
     padding-top: 4px;
@@ -75,16 +77,18 @@ a{
     object-fit: cover;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 950px) {
     .listeboutons{
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .fonctionnement .bouton{
-        width: 400px;
-        margin-left: 10px;
-        padding: 25px 0;
+        width: auto;
+        height: 70px;
+        margin-left: 30px;
+        padding: 0px 25px 20px 0;
         background-color: $color-background;
         border-radius: 25px;
         box-shadow: 5px 5px 5px $color-shadow;
@@ -96,8 +100,7 @@ a{
     
     .fonctionnement .numero{
         position: relative;
-        left: 0px;
-        bottom: 47px;
+        bottom: 200px;
         color: white;
         padding-left: 7px;
         padding-top: 4px;
@@ -107,5 +110,16 @@ a{
         border-radius: 15px;
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    .cards1, .cards2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+
+    .card{
+        width: 45%;
     }
 }
