@@ -120,7 +120,7 @@ h1 {
 }
 
 h3 {
-  margin: 6px 10px;
+  margin: 10px;
 }
 
 .lieu {
@@ -167,7 +167,7 @@ a {
   transform: scale(2);
   position: relative;
   top: 40px;
-  margin-right: 40px;
+  margin-right: 1px;
 }
 
 @media screen and (min-width: 950px) {
@@ -249,10 +249,17 @@ a {
 }
 
 .nomrestaurant {
+  display: flex;
+  justify-content: space-between;
   font-family: "Shrikhand";
   font-size: 25px;
   color: black;
   padding-bottom: 30px;
+}
+
+.coeur {
+  transform: scale(1.3);
+  padding-right: 20px;
 }
 
 .plat {
