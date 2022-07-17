@@ -70,13 +70,13 @@ h1 {
 .fonctionnement {
   padding: 25px 20px;
 }
-
-.listeboutons {
+.fonctionnement .listeboutons {
   display: flex;
   flex-direction: column;
 }
 
 .fonctionnement .bouton {
+  cursor: pointer;
   width: auto;
   height: 70px;
   margin-left: 10px;
@@ -87,7 +87,15 @@ h1 {
   box-shadow: 5px 5px 5px #bbbbbb;
 }
 
-.fonctionnement .fa-solid {
+.fonctionnement .bouton:hover {
+  background-color: #eee1fd;
+  box-shadow: 5px 5px 5px #555;
+}
+.fonctionnement .bouton:hover .fonctionnement .fa-solid:hover {
+  color: #9356DC;
+}
+
+.fonctionnement .fa-solid, .fonctionnement .fa-light {
   padding: 0 40px;
 }
 
@@ -145,6 +153,21 @@ a {
   border-top-right-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.sousphoto {
+  display: flex;
+  justify-content: space-between;
+}
+.sousphoto .textnom {
+  display: flex;
+  flex-direction: column;
+}
+.sousphoto .coeur {
+  transform: scale(2);
+  position: relative;
+  top: 40px;
+  margin-right: 40px;
 }
 
 @media screen and (min-width: 950px) {

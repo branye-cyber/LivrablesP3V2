@@ -1,14 +1,14 @@
 // Fonctionnement du site
 .fonctionnement{
     padding: 25px 20px;
-}
-
-.listeboutons{
-    display: flex;
-    flex-direction: column;
+    .listeboutons{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .fonctionnement .bouton{
+    cursor: pointer;
     width: auto;
     height: 70px;
     margin-left: 10px;
@@ -17,10 +17,22 @@
     background-color: $color-background;
     border-radius: 25px;
     box-shadow: 5px 5px 5px $color-shadow;
+    }
+
+.fonctionnement .bouton:hover{
+    background-color: $color-primary-pale;
+    box-shadow: 5px 5px 5px $color-hover;
+    // Je n'arrive pas à modifier la couleur de l'icone au survol du bouton
+    .fonctionnement .fa-solid:hover{
+        color: $color-primary;
+        }
+    
 }
 
-.fonctionnement .fa-solid{
+.fonctionnement .fa-solid, .fonctionnement .fa-light{
     padding: 0 40px;
+    // J'arrive seulement à la modifier en permanence
+    // color: $color-primary;
 }
 
 .fonctionnement .numero{
@@ -75,6 +87,22 @@ a{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
+}
+
+.sousphoto{
+    display: flex;
+    justify-content: space-between;
+    .textnom{
+        display: flex;
+        flex-direction: column;
+    }
+    .coeur{
+//        color: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        transform: scale(2);
+        position: relative;
+        top: 40px;
+        margin-right: 40px;
+    }
 }
 
 @media screen and (min-width: 950px) {
