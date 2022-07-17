@@ -171,7 +171,7 @@ a {
 }
 
 @media screen and (min-width: 950px) {
-  .listeboutons {
+  .fonctionnement .listeboutons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -241,11 +241,11 @@ a {
 }
 
 .menu9 {
-  height: 1330px;
+  height: 1350px;
 }
 
 .menu10 {
-  height: 1440px;
+  height: 1460px;
 }
 
 .nomrestaurant {
@@ -254,7 +254,7 @@ a {
   font-family: "Shrikhand";
   font-size: 25px;
   color: black;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .coeur {
@@ -303,7 +303,7 @@ a {
   cursor: pointer;
   height: 70px;
   width: 200px;
-  margin-top: 50px;
+  margin-top: 20px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   padding: 25px;
   text-align: center;
