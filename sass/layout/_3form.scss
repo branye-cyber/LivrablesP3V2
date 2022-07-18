@@ -22,8 +22,7 @@
 .fonctionnement .bouton:hover{
     background-color: $color-primary-pale;
     box-shadow: 5px 5px 5px $color-hover;
-    // Je n'arrive pas à modifier la couleur de l'icone au survol du bouton
-    .fonctionnement .fa-solid:hover{
+    .fa-solid{
         color: $color-primary;
         }
     
@@ -31,8 +30,6 @@
 
 .fonctionnement .fa-solid, .fonctionnement .fa-light{
     padding: 0 40px;
-    // J'arrive seulement à la modifier en permanence
-    // color: $color-primary;
 }
 
 .fonctionnement .numero{
@@ -68,6 +65,7 @@ a{
 }
 
 .card{
+    position: relative;
     width: 100%;
     height: 265px;
     border-radius: 20px;
@@ -106,9 +104,10 @@ a{
 }
 
 .nouveau{
-    position: relative;
-    bottom: 235px;
-    right: -50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
     width: 120px;
     padding: 10px 20px;
     font-size: 20px;
