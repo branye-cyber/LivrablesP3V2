@@ -164,12 +164,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-.sousphoto .coeur {
-  transform: scale(2);
-  position: relative;
-  top: 40px;
-  margin-right: 1px;
-}
 
 .nouveau {
   position: absolute;
@@ -183,6 +177,28 @@ a {
   border-radius: 5px;
   background-color: #99E2D0;
   color: #137d61;
+}
+
+.coeurregular {
+  position: absolute;
+  top: 200px;
+  right: 14px;
+  margin: 20px;
+  transform: scale(2);
+}
+
+.coeursolid {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  margin: 20px;
+  transform: scale(2.05);
+  color: #FF79DA;
+  opacity: 0;
+}
+.coeursolid:hover.coeursolid {
+  opacity: 1;
+  transition: opacity 330ms;
 }
 
 @media screen and (min-width: 950px) {

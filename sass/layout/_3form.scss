@@ -94,13 +94,6 @@ a{
         display: flex;
         flex-direction: column;
     }
-    .coeur{
-//        color: linear-gradient(to bottom right, $color-secondary, $color-primary);
-        transform: scale(2);
-        position: relative;
-        top: 40px;
-        margin-right: 1px;
-    }
 }
 
 .nouveau{
@@ -116,6 +109,30 @@ a{
     background-color: $color-tertiary;
     color: $color-tertiary-dark;
 }
+
+    .coeurregular{
+        position: absolute;
+        top: 200px;
+        right: 14px;
+        margin: 20px;
+        transform: scale(2);
+    }
+
+    .coeursolid{
+        position: absolute;
+        top: 200px;
+        right: 0;
+        margin: 20px;
+        transform: scale(2.05);
+        color: $color-secondary;
+        opacity: 0;
+        &:hover{
+            &.coeursolid{
+                opacity: 1;
+                transition: opacity 330ms;        
+            }
+        }
+    }
 
 @media screen and (min-width: 950px) {
     .fonctionnement .listeboutons{
