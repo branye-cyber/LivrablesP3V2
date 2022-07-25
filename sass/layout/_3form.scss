@@ -25,12 +25,11 @@
     .fa-solid{
         color: $color-primary;
         }
-    
-}
+    }
 
 .fonctionnement .fa-solid, .fonctionnement .fa-light{
     padding: 0 40px;
-}
+    }
 
 .fonctionnement .numero{
     position: relative;
@@ -45,7 +44,7 @@
     border-radius: 15px;
     margin-top: 0;
     margin-bottom: 0;
-}
+    }
 
 // Restaurants proposés
 #restaurants{
@@ -129,10 +128,10 @@ a{
         -webkit-background-clip:text;
         color:transparent;
         opacity: 0;
+        transition: opacity 500ms;        
         &:hover{
             &.coeursolid{
                 opacity: 1;
-                transition: opacity 330ms;        
             }
         }
     }

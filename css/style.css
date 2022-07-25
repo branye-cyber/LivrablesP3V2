@@ -13,6 +13,7 @@ body {
   list-style: none;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -198,10 +199,10 @@ a {
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
+  transition: opacity 500ms;
 }
 .coeursolid:hover.coeursolid {
   opacity: 1;
-  transition: opacity 330ms;
 }
 
 @media screen and (min-width: 950px) {
