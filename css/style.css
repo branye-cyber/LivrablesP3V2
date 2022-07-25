@@ -193,7 +193,10 @@ a {
   right: 0;
   margin: 20px;
   transform: scale(2.05);
-  color: #FF79DA;
+  background: -webkit-linear-gradient(top, #9356DC 30%, #FF79DA 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   opacity: 0;
 }
 .coeursolid:hover.coeursolid {

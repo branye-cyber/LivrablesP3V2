@@ -124,7 +124,10 @@ a{
         right: 0;
         margin: 20px;
         transform: scale(2.05);
-        color: $color-secondary;
+        background:-webkit-linear-gradient(top, $color-primary 30%, $color-secondary 70%);
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
         opacity: 0;
         &:hover{
             &.coeursolid{
