@@ -340,22 +340,14 @@ a {
      object-fit: cover;
 }
 
-.menu9, .menu10 {
+.menu {
   background-color: #F2F2F2;
   position: relative;
   top: -50px;
-  padding: 30px 20px;
+  padding: 30px 20px 160px 20px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-bottom: -50px;
-}
-
-.menu9 {
-  height: 1350px;
-}
-
-.menu10 {
-  height: 1460px;
 }
 
 .nomrestaurant {
@@ -387,6 +379,7 @@ a {
   padding: 8px 15px;
   background-color: white;
   border-radius: 25px;
+  transition-duration: 1000ms;
 }
 .choix h2 {
   font-size: 19px;
@@ -409,7 +402,7 @@ a {
   box-shadow: 5px 5px 5px #bbbbbb;
 }
 
-.menu9 .bouton, .menu10 .bouton {
+.menu .bouton {
   cursor: pointer;
   height: 70px;
   width: 200px;
