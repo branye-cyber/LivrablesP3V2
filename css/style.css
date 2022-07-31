@@ -26,8 +26,8 @@ body {
   opacity: 0.97;
   height: 100vh;
   z-index: 1;
-  -webkit-animation: loader 0.05s 2500ms forwards;
-          animation: loader 0.05s 2500ms forwards;
+  -webkit-animation: loader 0.05s 1500ms forwards;
+          animation: loader 0.05s 1500ms forwards;
   transform-origin: top;
 }
 
@@ -89,6 +89,76 @@ body {
 @keyframes loader {
   100% {
     transform: scale(0);
+  }
+}
+@-webkit-keyframes entrees {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes entrees {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes plats {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes plats {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes desserts {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes desserts {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes choix {
+  0% {
+    transform: translate(-100px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes choix {
+  0% {
+    transform: translate(-100px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 .logo {
@@ -374,12 +444,22 @@ a {
 }
 
 .choix {
+  position: relative;
   width: auto;
   margin: 20px 0;
   padding: 8px 15px;
   background-color: white;
   border-radius: 25px;
-  transition-duration: 1000ms;
+}
+.choix .fa-check-circle {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  bottom: 0;
+  left: 400px;
+  color: #99E2D0;
+  transform: scale(2);
+  width: 0px;
 }
 .choix h2 {
   font-size: 19px;
@@ -398,8 +478,25 @@ a {
   font-weight: 900;
 }
 
+.entrees {
+  -webkit-animation: entrees 500ms ease-in-out 0s 1 normal none;
+          animation: entrees 500ms ease-in-out 0s 1 normal none;
+}
+
+.plats {
+  -webkit-animation: plats 1000ms ease-in-out 0s 1 normal none;
+          animation: plats 1000ms ease-in-out 0s 1 normal none;
+}
+
+.desserts {
+  -webkit-animation: desserts 1500ms ease-in-out 0s 1 normal none;
+          animation: desserts 1500ms ease-in-out 0s 1 normal none;
+}
+
 .choix:hover {
   box-shadow: 5px 5px 5px #bbbbbb;
+  -webkit-animation: choix 1s ease-in-out 0s 1 backwards none;
+          animation: choix 1s ease-in-out 0s 1 backwards none;
 }
 
 .menu .bouton {

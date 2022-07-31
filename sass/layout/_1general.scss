@@ -18,7 +18,7 @@
     opacity: 0.97;
     height: 100vh;
     z-index: 1;
-    animation: loader 0.05s 2500ms forwards;
+    animation: loader 0.05s 1500ms forwards;
     transform-origin: top;
 }
 
@@ -65,5 +65,48 @@
 @keyframes loader{
     100% {
         transform: scale(0);
+    }
+}
+
+@keyframes entrees {
+    0%{
+        opacity: 0;
+        transform: translate(0, 10px);
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes plats {
+    0%{
+        opacity: 0;
+        transform: translate(0, 10px);
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes desserts {
+    0%{
+        opacity: 0;
+        transform: translate(0, 10px);
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes choix {
+    0%{
+        transform: translate(-100px, 0);
+    }
+
+    100%{
+        transform: translate(0, 0);
     }
 }
