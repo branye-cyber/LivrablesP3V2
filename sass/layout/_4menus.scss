@@ -56,32 +56,26 @@
 }
 
 .choix{
-    position: relative;
-    width: auto;
+    width: 100%;
     margin: 20px 0;
     padding: 8px 15px;
     background-color: white;
     border-radius: 25px;
-    .fa-check-circle{
-        position: absolute;
-        top: 45px;
-        right: 0;
-        bottom: 0;
-        left: 400px;
-        color: $color-tertiary;
-        transform: scale(2);
-        width: 0px;
-    }    
-        h2{
+    h2{
         font-size: 19px;
-        margin: 8px 0 0 0;        
+        margin: 8px 0 0 0;
+        overflow: hidden;
+        text-overflow: ellipsis;    
     }
     .details{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         p{
             margin: 8px 0 8px 0;
             font-weight: 300;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         span{
             font-size: 18px;
@@ -102,7 +96,6 @@
 
 .nomplat:hover{
     box-shadow: 5px 5px 5px $color-shadow;
-    //animation: choix 1s  0s normal none;
     animation: choix 1s ease-in-out 0s 1 backwards none;
 }
 
