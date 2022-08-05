@@ -43,7 +43,7 @@
 
 .coeur{
     transform: scale(1.3);
-    padding-right: 20px;
+    padding-right: 3%;
 }
 
 .plat{
@@ -55,48 +55,74 @@
     width: 40px;
 }
 
-.choix{
+.choice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 80px;
     margin: 20px 0;
-    padding: 8px 15px;
+    padding: 8px 0 8px 15px;
     background-color: white;
     border-radius: 25px;
-    h2{
-        font-size: 19px;
-        margin: 8px 0 0 0;
+    &__check{
+        background-color: $color-tertiary;
+        width: 0px;
+        height: 80px;
         overflow: hidden;
-        text-overflow: ellipsis;    
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        .fa-circle-check{
+            color: white;
+            transform: scale(2);
+            padding-top: 20px;
+            padding-left: 22%;
+        }    
     }
-    .details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        p{
-            margin: 8px 0 8px 0;
-            font-weight: 300;
+    &__details{
+        width: 110%;
+        max-width: 70%;
+        h2{
+            font-size: 19px;
+            margin: 8px 0 0 0;
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        span{
-            font-size: 18px;
-            font-weight: 900;
+        p{
+            margin: 8px 0 8px 0;
+            font-weight: 300;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;    
         }
+    }
+    &__price{
+        width: 80px;
+        padding-top: 30px;
+        padding-right: 15px;
+        font-size: 18px;
+        font-weight: 900;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.choice:hover{
+    .choice__check{
+        width: 100px;
+        transition-duration: 500ms;
     }
 }
 
 .entrees{
-    animation: entrees 500ms ease-in-out 0s 1 normal none;
-}
-.plats{
     animation: plats 1000ms ease-in-out 0s 1 normal none;
 }
-.desserts{
-    animation: desserts 1500ms ease-in-out 0s 1 normal none;
+.plats{
+    animation: plats 2000ms ease-in-out 0s 1 normal none;
 }
-
-.nomplat:hover{
-    box-shadow: 5px 5px 5px $color-shadow;
-    animation: choix 1s ease-in-out 0s 1 backwards none;
+.desserts{
+    animation: plats 3000ms ease-in-out 0s 1 normal none;
 }
 
 .menu .bouton{
