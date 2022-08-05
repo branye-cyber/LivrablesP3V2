@@ -463,7 +463,7 @@ a {
 .choice:hover .choice__check {
   width: 100px;
   transition-duration: 600ms;
-  /*transform: rotate(360deg);*/
+  transform: rotate(360deg);
 }
 .choice:hover .choice__check .fa-circle-check {
   transform: rotate(360deg);
