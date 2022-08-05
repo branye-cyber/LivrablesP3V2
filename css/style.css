@@ -428,9 +428,9 @@ a {
 }
 .choice__check .fa-circle-check {
   color: white;
-  transform: scale(2);
-  padding-top: 20px;
-  padding-left: 22%;
+  font-size: 30px;
+  padding-top: 24px;
+  padding-left: 25%;
 }
 .choice__details {
   width: 110%;
@@ -462,7 +462,15 @@ a {
 
 .choice:hover .choice__check {
   width: 100px;
-  transition-duration: 500ms;
+  transition-duration: 600ms;
+  /*transform: rotate(360deg);*/
+}
+.choice:hover .choice__check .fa-circle-check {
+  transform: rotate(360deg);
+}
+
+.choice:hover .fa-circle-check {
+  transform: rotate(360deg);
 }
 
 .entrees {

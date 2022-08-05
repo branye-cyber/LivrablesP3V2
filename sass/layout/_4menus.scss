@@ -74,9 +74,9 @@
         border-bottom-right-radius: 25px;
         .fa-circle-check{
             color: white;
-            transform: scale(2);
-            padding-top: 20px;
-            padding-left: 22%;
+            font-size: 30px;
+            padding-top: 24px;
+            padding-left: 25%;
         }    
     }
     &__details{
@@ -108,11 +108,17 @@
     }
 }
 
-.choice:hover{
-    .choice__check{
-        width: 100px;
-        transition-duration: 500ms;
+.choice:hover .choice__check{
+    width: 100px;
+    transition-duration: 600ms;
+    /*transform: rotate(360deg);*/
+    .fa-circle-check{
+        transform: rotate(360deg);
     }
+}
+
+.choice:hover .fa-circle-check{
+    transform: rotate(360deg);
 }
 
 .entrees{
