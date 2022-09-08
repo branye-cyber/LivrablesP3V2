@@ -417,20 +417,21 @@ a {
   padding: 8px 0 8px 15px;
   background-color: white;
   border-radius: 25px;
+  overflow: hidden;
 }
 .choice__check {
   background-color: #99E2D0;
   width: 0px;
   height: 80px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
 .choice__check .fa-circle-check {
   color: white;
   font-size: 30px;
-  padding-top: 24px;
-  padding-left: 25%;
 }
 .choice__details {
   width: 110%;
