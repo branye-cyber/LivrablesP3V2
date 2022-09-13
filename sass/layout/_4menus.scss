@@ -73,11 +73,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
         .fa-circle-check{
             color: white;
-            font-size: 30px;
+            font-size: 25px;
         }    
     }
     &__details{
@@ -112,14 +110,10 @@
 .choice:hover .choice__check{
     width: 100px;
     transition-duration: 600ms;
-    transform: rotate(360deg);
     .fa-circle-check{
+        transition: transform 600ms;
         transform: rotate(360deg);
     }
-}
-
-.choice:hover .fa-circle-check{
-    transform: rotate(360deg);
 }
 
 .entrees{
