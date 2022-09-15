@@ -79,8 +79,8 @@
         }    
     }
     &__details{
-        width: 110%;
-        max-width: 70%;
+        width: 100%;
+        max-width: 60%;
         h2{
             font-size: 19px;
             margin: 8px 0 0 0;
@@ -144,5 +144,14 @@
     box-shadow: 5px 5px 5px $color-shadow;   
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 950px) {
+    .entrees, .plats, .desserts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .choice{
+        margin: 10px;
+    }
 }
