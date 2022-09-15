@@ -136,7 +136,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #e6e6e6;
-  box-shadow: inset 0px 2px 0px 0px #D0D0D0;
+  box-shadow: inset 0px 2px 5px 0px #D0D0D0;
 }
 
 .fa-location-dot {
@@ -431,8 +431,8 @@ a {
   font-size: 25px;
 }
 .choice__details {
-  width: 100%;
-  max-width: 60%;
+  width: 100px;
+  flex-grow: 1;
 }
 .choice__details h2 {
   font-size: 19px;
@@ -459,7 +459,7 @@ a {
 }
 
 .choice:hover .choice__check {
-  width: 100px;
+  width: 70px;
   transition-duration: 600ms;
 }
 .choice:hover .choice__check .fa-circle-check {

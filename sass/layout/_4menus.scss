@@ -79,8 +79,8 @@
         }    
     }
     &__details{
-        width: 100%;
-        max-width: 60%;
+        width: 100px;
+        flex-grow: 1;
         h2{
             font-size: 19px;
             margin: 8px 0 0 0;
@@ -108,7 +108,7 @@
 }
 
 .choice:hover .choice__check{
-    width: 100px;
+    width: 70px;
     transition-duration: 600ms;
     .fa-circle-check{
         transition: transform 600ms;
