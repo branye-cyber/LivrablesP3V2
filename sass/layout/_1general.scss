@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+.container, .textfooter{
+    max-width: 1500px;
+    margin: auto;
+}
+
 .loader_container{
     position: fixed;
     display: flex;
