@@ -1,136 +1,158 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" href="images/logo/ohmyfood.png" />
-        <script src="https://kit.fontawesome.com/92bda30130.js" crossorigin="anonymous"></script>
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logo/ohmyfood.png" />
+    <script src="https://kit.fontawesome.com/92bda30130.js" crossorigin="anonymous"></script>
 
-        <title>Ohmyfood - Votre menu de rêve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+    <title>Ohmyfood - Votre menu de rêve</title>
 </head>
 
 <body>
     <div class="container">
 
-<!-- Loader Spinner -->
-    <div class="loader_container">
-        <div class="loader"></div>
+        <!-- Loader Spinner -->
+        <div class="loader_container">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <section class="titrePrincipal">
+                <div>
+                    <img class="logo" src="images/logo/ohmyfood.png" alt="Logo de Ohmyfood" />
+                </div>
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="paris">Paris, Belleville</div>
+                </div>
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <a href="#restaurants">
+                    <div class="bouton">Explorer nos restaurants</div>
+                </a>
+            </section>
+        </header>
+
+        <!-- Section Principale -->
+        <main>
+            <section class="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <div class="listeboutons">
+                    <div class="bouton">
+                        <p class="numero">1</p><i class="fa-solid fa-mobile-screen"></i>Choisissez un restaurant
+                    </div>
+                    <div class="bouton">
+                        <p class="numero">2</p><i class="fa-solid fa-list"></i>Composez votre menu
+                    </div>
+                    <div class="bouton">
+                        <p class="numero">3</p><i class="fa-solid fa-store"></i>Dégustez au restaurant
+                    </div>
+                </div>
+            </section>
+
+            <div id="restaurants">
+                <h2>Restaurants</h2>
+                <div class="cards1">
+                    <section class="card palette">
+                        <a href="palette.html">
+                            <div><img class="photo" src="images/restaurants/1)palette.jpg" alt="La palette du goût">
+                            </div>
+                            <div class="sousphoto">
+                                <div class="textnom">
+                                    <div class="nom">
+                                        <h3>La palette du goût</h3>
+                                    </div>
+                                    <div class="lieu">Ménilmontant</div>
+                                </div>
+                            </div>
+                            <div class="nouveau">Nouveau</div>
+                            <div class="coeurregular"><i class="fa-regular fa-heart"></i></div>
+                            <div class="coeursolid"><i class="fa-solid fa-heart"></i></div>
+                        </a>
+                    </section>
+                    <section class="card note">
+                        <a href="note.html">
+                            <div><img class="photo" src="images/restaurants/2)note.jpg" alt="La note enchantée"></div>
+                            <div class="sousphoto">
+                                <div class="textnom">
+                                    <div class="nom">
+                                        <h3>La note enchantée</h3>
+                                    </div>
+                                    <div class="lieu">Charonne</div>
+                                </div>
+                            </div>
+                            <div class="nouveau">Nouveau</div>
+                            <div class="coeurregular"><i class="fa-regular fa-heart"></i></div>
+                            <div class="coeursolid"><i class="fa-solid fa-heart"></i></div>
+                        </a>
+                    </section>
+                </div>
+                <div class="cards2">
+                    <section class="card francaise">
+                        <a href="francaise.html">
+                            <div><img class="photo" src="images/restaurants/3)francaise.jpg" alt="A la française"></div>
+                            <div class="sousphoto">
+                                <div class="textnom">
+                                    <div class="nom">
+                                        <h3>À la française</h3>
+                                    </div>
+                                    <div class="lieu">Cité Rouge</div>
+                                </div>
+                            </div>
+                            <div class="coeurregular"><i class="fa-regular fa-heart"></i></div>
+                            <div class="coeursolid"><i class="fa-solid fa-heart"></i></div>
+                        </a>
+                    </section>
+                    <section class="card delice">
+                        <a href="delice.html">
+                            <div><img class="photo" src="images/restaurants/4)delice.jpg" alt="Le délice des sens">
+                            </div>
+                            <div class="sousphoto">
+                                <div class="textnom">
+                                    <div class="nom">
+                                        <h3>Le délice des sens</h3>
+                                    </div>
+                                    <div class="lieu">Folie-Méricourt</div>
+                                </div>
+                            </div>
+                            <div class="coeurregular"><i class="fa-regular fa-heart"></i></div>
+                            <div class="coeursolid"><i class="fa-solid fa-heart"></i></div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </main>
     </div>
 
-<!-- Header -->
-<header>
-    <section class="titrePrincipal">
-        <div>
-            <img class="logo" src="images/logo/ohmyfood.png" alt="Logo de Ohmyfood"/>
-        </div>
-        <div class="location">
-            <i class="fa-solid fa-location-dot"></i>
-            <div class="paris">Paris, Belleville</div>
-        </div>
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <a href="#restaurants"><div class="bouton">Explorer nos restaurants</div></a>
-    </section>
-</header>
-
-<!-- Section Principale -->
-<main>
-    <section class="fonctionnement">
-        <h2>Fonctionnement</h2>
-        <div class="listeboutons">
-            <div class="bouton"><p class="numero">1</p><i class="fa-solid fa-mobile-screen"></i>Choisissez un restaurant</div>
-            <div class="bouton"><p class="numero">2</p><i class="fa-solid fa-list"></i>Composez votre menu</div>
-            <div class="bouton"><p class="numero">3</p><i class="fa-solid fa-store"></i>Dégustez au restaurant</div>
-        </div>
-    </section>
-
-    <div id="restaurants">
-        <h2>Restaurants</h2>
-        <div class="cards1">
-            <section class="card palette">
-                <a href="palette.html">
-                    <div><img class="photo" src="images/restaurants/1)palette.jpg" alt="La palette du goût"></div>
-                    <div class="sousphoto">
-                        <div class="textnom">
-                            <div class="nom"><h3>La palette du goût</h3></div>
-                            <div class="lieu">Ménilmontant</div>
-                        </div>
-                    </div>
-                    <div class="nouveau">Nouveau</div>
-                    <div class="coeurregular"><i class="fa-regular fa-heart"></i></div>
-                    <div class="coeursolid"><i class="fa-solid fa-heart"></i></div>
-                </a>
-            </section>
-            <section class="card note">
-                <a href="note.html">
-                    <div><img class="photo" src="images/restaurants/2)note.jpg" alt="La note enchantée"></div>
-                    <div class="sousphoto">
-                        <div class="textnom">
-                            <div class="nom"><h3>La note enchantée</h3></div>
-                            <div class="lieu">Charonne</div>
-                        </div>
-                    </div>
-                    <div class="nouveau">Nouveau</div>
-                    <div class="coeurregular"><i class="fa-regular fa-heart"></i></div>
-                    <div class="coeursolid"><i class="fa-solid fa-heart"></i></div>
-                </a>
-            </section>
-        </div>
-        <div class="cards2">
-            <section class="card francaise">
-                <a href="francaise.html">
-                    <div><img class="photo" src="images/restaurants/3)francaise.jpg" alt="A la française"></div>
-                    <div class="sousphoto">
-                        <div class="textnom">
-                            <div class="nom"><h3>À la française</h3></div>
-                            <div class="lieu">Cité Rouge</div>
-                        </div>
-                    </div>
-                    <div class="coeurregular"><i class="fa-regular fa-heart"></i></div>
-                    <div class="coeursolid"><i class="fa-solid fa-heart"></i></div>
-                </a>
-            </section>
-            <section class="card delice">
-                <a href="delice.html">
-                    <div><img class="photo" src="images/restaurants/4)delice.jpg" alt="Le délice des sens"></div>
-                    <div class="sousphoto">
-                        <div class="textnom">
-                            <div class="nom"><h3>Le délice des sens</h3></div>
-                            <div class="lieu">Folie-Méricourt</div>
-                        </div>
-                    </div>
-                    <div class="coeurregular"><i class="fa-regular fa-heart"></i></div>
-                    <div class="coeursolid"><i class="fa-solid fa-heart"></i></div>
-                </a>
-            </section>
-        </div>
-    </div>
-</main>
-</div>
-
-<!-- Footer -->
+    <!-- Footer -->
     <footer>
-    <div class="textfooter">
-        <ul>
-            <li><h4>Ohmyfood</h4></li>
-            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="mailto:branye@gmail.com">Contact</a></li>
-        </ul>
-    </div>
+        <div class="textfooter">
+            <ul>
+                <li>
+                    <h4>Ohmyfood</h4>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:branye@gmail.com">Contact</a></li>
+            </ul>
+        </div>
     </footer>
-    </body>
+</body>
+
 </html>
